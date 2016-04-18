@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">in_situ</string>
+    <string name="configurar">Configuration</string>
+    <string name="mapa">Carte</string>
+    <string name="camara">Caméra</string>
+    <string name="ayuda">Aider</string>
+    <string name="derechos">Tous droits \n réservés</string>
+    <string name="correo">desarrollo.insitu@insitu.com</string>
+</resources>
