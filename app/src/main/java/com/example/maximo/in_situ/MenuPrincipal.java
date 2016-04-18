@@ -11,6 +11,10 @@ import android.os.Process;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.view.WindowManager;
+import android.widget.Toast;
+
+import java.util.Timer;
+import java.util.TimerTask;
 
 /**
  * Created by MAXIMO on 27-03-2016.
@@ -27,6 +31,8 @@ public class MenuPrincipal extends AppCompatActivity {
         //Sacar el action bar
         getSupportActionBar().hide();
         //getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
+
+
 
     }
 
@@ -61,3 +67,6 @@ public class MenuPrincipal extends AppCompatActivity {
         super.onDestroy();
     }
 }
+
+
+

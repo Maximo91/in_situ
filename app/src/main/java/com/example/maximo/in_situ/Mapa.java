@@ -51,6 +51,9 @@ public class Mapa extends FragmentActivity implements OnMapReadyCallback{
     private GoogleMap mMap;
     NavigationView navigationView;
     DrawerLayout drawer_layout;
+    GPSBackground datosGPS;
+    boolean repetidor;
+    public static final int gpsTimeInSeconds = 300;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -64,14 +67,17 @@ public class Mapa extends FragmentActivity implements OnMapReadyCallback{
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager().findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
 
-        Timer myTimer = new Timer();
-        myTimer.schedule(new TimerTask() {
-            @Override
-            public void run() {
-                DatosGPS datosGPS = new DatosGPS();
-                datosGPS.datos_gps();
+        datosGPS = new GPSBackground();
+        repetidor = true;
+
+        /*while(repetidor){
+            try {
+                Toast.makeText(Mapa.this,"Llegamosss", Toast.LENGTH_LONG).show();
+                Thread.sleep(5000);
+            } catch (InterruptedException e) {
+            e.printStackTrace();
             }
-        }, 10000);
+        }*/
 
 
 

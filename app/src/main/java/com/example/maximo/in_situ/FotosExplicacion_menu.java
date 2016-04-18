@@ -81,7 +81,7 @@ public class FotosExplicacion_menu extends AppTour {
 
     @Override
     public void onDonePressed() {
-        finish();
+        closeContextMenu();
     }
 
     @Override
